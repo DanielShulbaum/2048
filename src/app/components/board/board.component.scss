@@ -1,7 +1,10 @@
 :host{
   position: relative;
-  display: flex;
-  flex-wrap:wrap;
+  // display: flex;
+  // flex-wrap:wsrap;
+  display:grid;
+  grid-template-columns:repeat(4, 1fr) ;
+  grid-template-rows: repeat(4, 1fr);
   max-height: 520px;
   gap:12px;
   @media (min-width: 520px) {

@@ -8,22 +8,26 @@ import {  trigger,  state,  style,  animate,  transition, stagger} from '@angula
   templateUrl: './board.component.html',
   styleUrls: ['./board.component.scss'],
   animations: [
+    trigger('fade', [
+      transition('void=> *',[
+        style({opacity:0}),
+        animate(1000,style({opacity:1}))
+      ])
+    ]),
+
     trigger('fadeSlideInOut', [
       transition(':enter', [
-
         // state('*', style({position: 'relative'}) ),
-
         style({ opacity: 1, transform: 'scale(0.5)' }),
         animate('100ms', style({ opacity: 1, transform: 'scale(1)' })),
       ]),
       // transition(':leave', [
-      //   style({position: 'absolute', left:this.left+'px'}),
-      //   // animate('1000ms', style({ opacity: 1, transform:'translateX(100px)' })),
-      //   animate('1000ms', style({ opacity: 1, transform:this.translate }))
+      //   style({position: 'relative', }),
+      //   animate('1000ms', style({ opacity: 1, transform:'translateX(100px)' })),
+      //   // animate('1000ms', style({ opacity: 1, transform:this?.translate }))
       // ]
       // ),
     ]),
-
 
     // trigger('slide', [
     //   transition(':leave', [
@@ -32,7 +36,6 @@ import {  trigger,  state,  style,  animate,  transition, stagger} from '@angula
     //     animate('100ms', style({ opacity: 1, transform: 'scale(1)' })),
     //   ]),
     // ]),
-
 ]
 
 })

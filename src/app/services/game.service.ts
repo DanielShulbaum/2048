@@ -79,9 +79,9 @@ export class GameService {
             // this.animateCellMove(i,i)
           }
         }
-      if(start!==-1){
-        // this.animateCellMove(start,end)
-        }
+      // if(start!==-1){
+      //   this.animateCellMove(start,end)
+      //   }
       }
     }
   }
@@ -91,10 +91,9 @@ export class GameService {
       .getBoundingClientRect().top;
     const secondPosition = document.getElementById(''+to)!
       .getBoundingClientRect().top;
-
-
     const diff = firstPosition-secondPosition;
     // console.log('diff'+diff);
+    // first!.style.position='absolute';
     first!.style.transform='translate('+diff+'px)';
   }
   merge(limit:number){

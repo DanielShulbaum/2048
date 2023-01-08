@@ -9,7 +9,7 @@
   <!-- [@slide]="{ params: { pageMarginValue: currentMargin }}" -->
 
 
-<div *ngIf="isGameWon || !areThereMoves"  class="over">
+<div @fade *ngIf="isGameWon || !areThereMoves"  class="over">
   <div *ngIf="!areThereMoves" class="title">Game over!</div>
   <div *ngIf="isGameWon" class="title">You Won!!!</div>
   <div class="container" (click)="initGame()">

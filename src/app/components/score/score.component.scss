@@ -1,9 +1,11 @@
 :host{
   margin-top: 5px;
-  width: 60px;
+  width: 80px;
   background: #bbada0;
   border-radius: 5px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container{
