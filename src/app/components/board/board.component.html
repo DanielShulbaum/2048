@@ -1,0 +1,18 @@
+
+<app-cell [id]="i"
+  [value] = "value" *ngFor="let value of values;
+  let i = index; "  [@fadeSlideInOut]
+  [@.disabled]="!value"
+
+  ></app-cell>
+
+  <!-- [@slide]="{ params: { pageMarginValue: currentMargin }}" -->
+
+
+<div *ngIf="isGameWon || !areThereMoves"  class="over">
+  <div *ngIf="!areThereMoves" class="title">Game over!</div>
+  <div *ngIf="isGameWon" class="title">You Won!!!</div>
+  <div class="container" (click)="initGame()">
+    <div class="content">Try Again</div>
+  </div>
+</div>
