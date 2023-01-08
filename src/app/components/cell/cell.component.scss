@@ -1,0 +1,86 @@
+// $transition-time:170ms;
+
+.cell{
+  display: flex;
+  width:60px ;
+  height:60px ;
+  @media (min-width: 520px) {
+    width:107px ;
+    height:107px ;
+    font-size: 3rem;
+  }
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  animation: unset;
+
+    // transition: all 1s ease-in-out;
+
+    // -webkit-animation: slide 0.5s forwards;
+    // -webkit-animation-delay: 2s;
+    // animation: slide 0.5s forwards;
+    // animation-delay: 2s;
+
+
+
+    // // @include border-radius($tile-radius);
+    // // @include transition($transition-time ease-in-out);
+    // -webkit-transition-property: -webkit-transform;
+    // -moz-transition-property: -moz-transform;
+    // transition-property: transform;
+    // z-index: 2;
+
+}
+
+
+.two{
+  background-color:#eee4da ;
+  color:#776e65 ;
+  transition: transformX(10px);
+
+}
+.four{
+  background-color:#eee1c9 ;
+  color:#776e65 ;
+}
+.eight{
+  background-color:#f3b27a ;
+  color:#f9f6f2 ;
+}
+.sixteen{
+  background-color:#f69664;
+  color:#f9f6f2 ;
+}
+.thirtytwo{
+  background-color:#f77c5f;
+  color:#f9f6f2 ;
+}
+.sixtyfour{
+  background-color:#f75f3b;
+  color:#f9f6f2 ;
+}
+.hundredtwentyeight{
+  background-color:#edd073;
+  color:#f9f6f2 ;
+}
+.twohundredfiftysix,.fourthousand,.eightthousand{
+  background-color:#ed7b73;
+  color:#f9f6f2 ;
+}
+.fivehundred{
+  background-color:#ed7b73;
+  color:#f9f6f2 ;
+}
+.onethousand{
+  background-color:#ed7b73;
+  color:#f9f6f2 ;
+}
+.twothousand{
+  background-color:#ed7b73;
+  color:#f9f6f2 ;
+}
+
+.null{
+  background-color:rgba(238, 228, 218, 0.35);
+}

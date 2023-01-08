@@ -1,0 +1,10 @@
+<div id="{{id}}" class="cell"
+
+[ngClass]="{'null': value===null,'two': value===2, 'four': value===4, 'eight': value===8,
+'sixteen': value===16,'thirtytwo': value===32, 'sixtyfour': value===64,
+'hundredtwentyeight': value===128,'twohundredfiftysix': value===256,
+'fivehundred':value===512,'onethousand':value===1024, 'twothousand':value===2048,
+'fourthousand':value===4096,'eightthousand':value===8192}">{{value}}</div>
+
+
+<!-- [@fadeSlideInOut]="value===null" -->

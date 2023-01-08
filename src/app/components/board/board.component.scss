@@ -1,0 +1,54 @@
+:host{
+  position: relative;
+  display: flex;
+  flex-wrap:wrap;
+  max-height: 520px;
+  gap:12px;
+  @media (min-width: 520px) {
+  gap:17px;
+  }
+}
+.over{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top:-20px;
+  left:-20px;
+  width: 315px;
+  height: 315px;
+  background: rgba(238, 228, 218, 0.73);
+  z-index: 5;
+  animation: fade-in 800ms ease 1200ms;
+  animation-fill-mode: both;
+  @media (min-width: 520px) {
+    width: 520px;
+    height: 520px;
+    }
+}
+.title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #776e65;
+  @media (min-width: 520px) {
+    font-size: 3.5rem;
+    }
+}
+.container{
+  margin-top: 35px;
+  background: #8f7a66;
+  height: 40px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.content{
+
+  color: white;
+  font-weight: bold;
+}
+
